@@ -1,5 +1,5 @@
-import type { ROUTES } from "./Route";
-import { voisinsDe } from "./Voisins";
+import type { Route } from "./Route.ts";
+import { voisinsDe } from "./Voisins.ts";
 
 export interface ResultatDijkstra {
   chemin: string[];

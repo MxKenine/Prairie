@@ -1,4 +1,4 @@
-import { ROUTES } from "./Route";
+import type { Route } from "./Route.ts";
 
 interface Voisin {
   noeud: string;
@@ -27,4 +27,4 @@ export function voisinsDe(noeud: string, routes: Route[]): Voisin[] {
   return voisins;
 }
 
-console.log(voisinsDe("gue", ROUTES));
+

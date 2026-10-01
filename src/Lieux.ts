@@ -55,7 +55,7 @@ export const LIEUX = [
   },
   {
     id: "labyrinthe",
-    nom: "Labyrinthe",
+    nom: "Entrée de labyrinthe",
     x: 82.0,
     y: 79.0
   }
