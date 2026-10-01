@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Prairie · La quête d’Arthur</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="dist/bundle.js" defer></script>
+</head>
+<body>
+  <header class="entete"><a class="marque" href="./">♜ <span>LA PRAIRIE<small>LES CHRONIQUES DE KAAMELOTT</small></span></a><span class="edition">UNE QUÊTE, QUATRE COMPAGNONS</span></header>
+  <main>
+    <section class="intro"><div><p class="surtitre">LE ROYAUME VOUS ATTEND</p><h1>On en a gros.<br><em>Mais on a un chemin.</em></h1><p>Un détour par le Lac, un trésor à trouver, et Arthur à ramener au château.</p></div><div class="sceau" aria-hidden="true">⚜</div></section>
+    <ol class="etapes" aria-label="Étapes de la quête"><li data-phase="0" aria-current="step">01 <span>Vers le labyrinthe</span></li><li data-phase="1">02 <span>Le trésor</span></li><li data-phase="2">03 <span>Sortir du labyrinthe</span></li><li data-phase="3">04 <span>Retour au château</span></li></ol>
+    <div class="disposition">
+      <section class="panneau aventure" aria-labelledby="titre-vue">
+        <div class="titre-panneau"><div><p class="surtitre" id="sous-titre">LA CARTE DU ROYAUME</p><h2 id="titre-vue">En route pour l’aventure</h2></div><span class="badge" id="statut">Prêt au départ</span></div>
+        <div id="scene" class="scene"></div>
+        <div class="legende"><span>🟡 Arthur</span><span>━━ Chemin parcouru</span><span id="indication">Le Lac est obligatoire à l’aller.</span></div>
+        <div class="commandes"><button id="demarrer" type="button">Lancer la quête →</button><button id="pause" class="secondaire" type="button" disabled>Pause</button><button id="reset" class="secondaire" type="button">Recommencer</button><label>Allure <select id="vitesse"><option value="700">Tranquille</option><option value="250" selected>Normale</option><option value="40">Au galop</option></select></label></div>
+      </section>
+      <aside class="panneau journal"><p class="surtitre">LE CARNET D’ARTHUR</p><h2>Journal de bord</h2><div class="mesures"><div><strong id="energie">0</strong><span>énergie · carte</span></div><div><strong id="pas">0</strong><span>pas · labyrinthe</span></div></div><p class="but">Objectif : récupérer le trésor et rentrer à Kaamelott.</p><ol id="logs" aria-live="polite" aria-relevant="additions"></ol></aside>
+    </div>
+    <footer>QUENTIN · FAIZA · WILLIAM · JULES <span>Carte : Dijkstra · Labyrinthe : BFS</span></footer>
+  </main>
+</body>
+</html>

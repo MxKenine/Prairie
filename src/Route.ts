@@ -1,4 +1,4 @@
-interface Route {
+export interface Route {
   de: string;
   vers: string;
   poids: number;
@@ -74,4 +74,5 @@ export const ROUTES: Route[] = [
     poids: 15
   }
 ];
+
 
